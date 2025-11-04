@@ -3,9 +3,9 @@
 using namespace std;
 
 // 功能：計算平均值
-double calculateAverage(const vector<int> &numbers)
+double calculateAverage(const vector<double> &numbers)
 {
-    int sum = 0;
+    double sum = 0;
     for (int i = 0; i <= numbers.size(); i++)
     {
         sum += numbers[i];
@@ -15,7 +15,7 @@ double calculateAverage(const vector<int> &numbers)
 
 int main()
 {
-    vector<int> data = {10, 20, 30, 40, 50};
+    vector<double> data = {10, 20, 30, 40, 50};
     cout << "平均值: " << calculateAverage(data) << endl;
     return 0;
 }
